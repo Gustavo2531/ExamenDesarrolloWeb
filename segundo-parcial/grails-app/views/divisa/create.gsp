@@ -3,19 +3,19 @@
     <head>
         <meta name="layout" content="main" />
         <g:set var="entityName" value="${message(code: 'divisa.label', default: 'Divisa')}" />
-        <title><g:message code="default.create.label" args="[entityName]" /></title>
+        <title>Crear Crimen</title>
     </head>
     <body>
         <a href="#create-divisa" class="skip" tabindex="-1"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
         <div class="nav" role="navigation">
             <ul>
                 <li><a class="home" href="${createLink(uri: 'http://127.0.0.1:51093/app/index.html')}"><g:message code="default.home.label"/></a></li>
-                <li><g:link class="list" action="index"><g:message code="default.list.label" args="[entityName]" /></g:link></li>
+                <li><g:link class="list" action="index">Lista de Crimenes</g:link></li>
             </ul>
         </div>
         <div id="create-divisa" class="content scaffold-create" role="main">
             <div class="container">
-             <h2><g:message code="default.create.label" args="[entityName]" /></h2>
+             <h2>Crear Nuevo Crimen</h2>
             <g:if test="${flash.message}">
             <div class="message" role="status">${flash.message}</div>
             </g:if>
